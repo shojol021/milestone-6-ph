@@ -28,7 +28,7 @@ console.log(frnds(inp));
 
 // pr4
 let sum = 0;
-const sq = (ar) => {
+const sq = ar => {
     for(const el of ar){
         sum = sum + el*el
     }
@@ -48,3 +48,13 @@ const fun = (a, b) => {
 const p1 = [12, 1, 8 , 9]
 const p2 = [2, 11, 3 , 0]
 console.log(fun(p1, p2));
+
+// pr6
+
+const ob = {a: 2, b: 6, c: 0, d: 'adnan', e: 9};
+const {a, b, ...z} = ob;
+
+console.log(a);
+console.log(b);
+console.log(z);
+
