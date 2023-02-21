@@ -38,6 +38,9 @@ const sq = ar => {
 const numbers = [1,2,3,6,7];
 console.log(sq(numbers));
 
+const total = numbers.reduce((pre, cur) => (cur*cur + pre), 0);
+console.log(total);
+
 // pr5
 
 const fun = (a, b) => {
@@ -58,3 +61,8 @@ console.log(a);
 console.log(b);
 console.log(z);
 
+const product = {name: 'Laptop', model:'Yoga 3', price:49000, dusk: '512SSD'}
+
+const {price} = product;
+
+console.log(price);
