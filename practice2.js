@@ -75,11 +75,17 @@ console.log(user.address.city);
 console.log(user.address.geo.lat);
 console.log(user.company.name);
 
-const empty = ar1.filter
-
-const ar6 = [2, 0, 9, 3, 1];
-for(const emt in ar6){
-    ar6.pop();
+for (const item in ar4) {
+    if (ar4[item].age === 29) {
+        console.log(ar4[item]);
+    }
 }
 
-console.log(ar6);
+const obj2 = ar4.find(x => x.age === 32)
+
+const{name, age} = obj2;
+
+console.log(name, age)
+
+const stuInfo = JSON.stringify({ name: "James", roll: 3 }); 
+console.log(stuInfo.name); 
