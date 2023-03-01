@@ -57,5 +57,19 @@ function cal(num1, num2, operation) {
     }
   }
   
-  cal(12, 3, 'div');
+//   cal(12, 3, 'div');
+
+const arr = [7, 3, 8, 12];
+
+arr.find((n, i, a, l) => {
+    n*2;
+    console.log(n, i, a, l);
+})
+
+let b = 1;
+for (let i = 1; i < 1000; i++){
+    b = b*i;
+}
+// console.log(b);
   
+
